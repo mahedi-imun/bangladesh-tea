@@ -1,0 +1,99 @@
+/* fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+/* common-styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+#btn{
+    padding:15px 40px;
+    background-color:#58C055;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* header styles */
+header{
+    height:100vh;
+    background-image: linear-gradient(#e1f8f5,white);
+}
+nav{
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-area img{
+    width:70px;
+    height:60px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style-type: none;
+    margin:0 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size:20px;
+    color: #030303;
+    font-weight: 300;
+}
+.login-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+/* banner styles */
+.banner{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left-side h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 100px 0 30px;
+    text-transform: capitalize;
+}
+.left-side p{
+    font-size:18px;
+    letter-spacing:0.5px;
+    margin-bottom: 30px;
+    text-transform:capitalize;
+}
+.join-btn{
+    display: flex;
+    align-items: center;
+}
+.join-btn a {
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 20px;
+    color: #58C055;
+    text-transform:lowercase;
+}
+.right-side  {
+    display: flex;
+    justify-content:end;
+}
+.right-side img{
+    width:100%;
+}
