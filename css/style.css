@@ -23,10 +23,14 @@ body{
     text-transform: uppercase;
     cursor: pointer;
 }
+#highlight{
+    color: #58C055;
+}
 /* header styles */
 header{
     height:100vh;
-    background-image: linear-gradient(#e1f8f5,white);
+    background-image: linear-gradient(#e1f8f5,#fff);
+    margin-bottom: 150px;
 }
 nav{
     display: grid;
@@ -66,9 +70,10 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
 }
 .left-side h1 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
     margin: 100px 0 30px;
     text-transform: capitalize;
@@ -96,4 +101,67 @@ nav ul li a{
 }
 .right-side img{
     width:100%;
+}
+
+/* tea-item sections styles*/
+section{
+    margin-bottom: 150px;
+}
+.section-header h2{
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+.tea{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.tea-item {
+    width: 250px;
+    height: 350px;
+    padding: 30px;
+    text-align: center
+
+}
+.tea .tea-item img{
+    width: 250px;
+
+}
+.tea-item h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+/* tea garden sections styles */
+
+.tea-garden{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.garden-left{
+    width: 100%;
+}
+.garden-left img{
+    border-radius: 10%;
+}
+
+.garden-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+.garden-header {
+    font-size:40px;
+    margin-bottom: 30px;
+}
+.garden-right input {
+    padding: 10px;
+}
+.garden-right p{
+    font-size: 20px;
+    margin-bottom: 20px;
 }
